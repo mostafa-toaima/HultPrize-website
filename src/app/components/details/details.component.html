@@ -1,0 +1,67 @@
+<section class="width mx-auto rounded shadow p-4 my-3">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="w-100" src="{{ data.img }}" alt="" />
+    </div>
+
+    <div class="col-md-8 box-details">
+      <h2 class="text-center text-winner p-2">{{ data.name }}</h2>
+      <p class="text-muted text-description p-2">{{ data?.description }}</p>
+      @if(data?.awards){
+        <h3>Awards</h3>
+        <ul>
+          <li *ngIf="data?.awards?.global" class="pb-2">{{ data?.awards?.global }}</li>
+          <li>{{ data?.awards?.national }}</li>
+        </ul>
+      }
+    </div>
+    <div class="d-flex justify-content-between align-items-center pt-4 ">
+      <ul class="list-unstyled mt-2 mt-lg-0">
+        <li class="nav-item d-flex align-items-center gap-3 me-4">
+          @if(data?.facebook){
+            <a
+              href={{data?.facebook}}
+              target="_blank"
+              class="text-reset"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          }
+          @if(data?.whatsapp){
+            <a
+              target="_blank"
+              href={{data?.whatsapp}}
+              class="text-reset"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          }
+
+          @if(data?.linkedin){
+            <a
+              target="_blank"
+              href={{data?.linkedin}}
+              class="text-reset"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          }
+
+          @if(data?.instagram){
+
+            <a
+              target="_blank"
+              href={{data?.instagram}}
+              class="text-reset"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          }
+        </li>
+      </ul>
+      <button
+        class="btn btn-hult"
+        routerLink="/board"
+        routerLinkActive="active"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</section>

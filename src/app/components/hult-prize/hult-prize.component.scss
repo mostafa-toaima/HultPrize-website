@@ -1,0 +1,77 @@
+.half-height-background {
+  background-image: url('../../../assets/landing.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  box-shadow: 0px 0px 0px 2px rgba(230, 0, 127, 0.7);
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  @media screen and (max-width: 768px) {
+    height: 60vh;
+  }
+}
+
+.row {
+  padding: 80px 30px 20px ;
+  .text {
+    color: #777;
+    padding: 20px;
+    font-size: 15px;
+  }
+  .text-global{
+    color: #777;
+    padding: 20px;
+    font-size: 20px;
+  }
+  img {
+    border-radius: 40px;
+  }
+  .tanta-img {
+    border-radius: 40px;
+    width: 400px !important;
+  }
+  .header{
+    color: #4d4c4c;
+    padding-top: 20px;
+  }
+}
+
+
+.winners {
+  .header {
+    h1{
+      font-size: 2.5rem;
+      color: #f60076 ;
+    }
+    i{
+      font-size: 40px;
+      color: #f60076 ;
+    }
+  }
+  .body {
+    img{
+      width: 400px;
+      height: 300px;
+    }
+    p{
+      color: #777;
+      font-size: 15px;
+      padding: 20px;
+      text-align: center;
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

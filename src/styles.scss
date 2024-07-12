@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$main-color: #f60076;
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+}
+
+.shadow {
+  box-shadow: $shadow;
+}
+
+.active-link {
+  background-color: #f60076;
+  color: #fff !important;
+  border-radius: 10px;
+}
+
+.text-winner{
+  color: $main-color;
+}
+
+.section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 0px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 40px;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .col-md-12 {
+      transition: transform 0.5s ease-in-out;
+
+      &:hover {
+        transform: rotate(5deg);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+        transition: color 0.5s ease;
+
+        &:hover {
+          color: #f60076;
+        }
+      }
+    }
+  }
+}
+.btn-hult {
+  background-color: #f60076;
+  color: #fff;
+  border: 1px solid #f60076;
+
+  &:hover {
+    background-color: #fff;
+    color: #f60076;
+    border: 1px solid #f60076;
+  }
+}
+.box {
+  color: #fff;
+  padding: 10px;
+  border-radius: 60px;
+  background-color: #f60076;
+
+  h4 {
+    font-size: 20px;
+  }
+
+}

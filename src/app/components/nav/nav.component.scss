@@ -1,0 +1,35 @@
+  nav {
+    background-color: #fff;
+    transition: all 1s ease;
+    .container-fluid {
+      img {
+        width: 220px;
+      }
+      ul{
+        li{
+          a{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #f60076 !important;
+  color: #fff !important;
+}
+.dropdown-item {
+  transition: 1s !important;
+  padding: 4px !important;
+}
+
+.dropdown-menu {
+  padding: 3px !important;
+  text-align: center;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -124% !important;
+}

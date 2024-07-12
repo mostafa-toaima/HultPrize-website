@@ -1,0 +1,28 @@
+<div class="container half-height-background">
+  <div class="row">
+    <div class="header col-md-12 text-center">
+      <h1>Hult Prize Board 2023-2024</h1>
+    </div>
+  </div>
+  <div class="row py-4">
+    <div class="col-md-12">
+      <owl-carousel-o [options]="BoardOptions">
+        <ng-container *ngFor="let slide of data">
+          <ng-template  carouselSlide>
+            <div class="card-item swiper-slide">
+              <img  class="user-image" [src]="slide.img" [alt]="slide.name"/>
+              <h2 class="user-name">{{ slide.name }}</h2>
+              <p class="user-profession">{{ slide.profession }}</p>
+              <button
+                class="message-button"
+                routerLink="/details/{{ slide.id }}"
+              >
+                details
+              </button>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
