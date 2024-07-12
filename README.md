@@ -1,2 +1,2 @@
-# HultPrize-website-
+# HultPrize-website
 Angular project
